@@ -2,4 +2,4 @@
 
 ## Installation
 1. Close this repo
-* `$ script/bootstrap`
+* `$ ruby script/bootstrap`
