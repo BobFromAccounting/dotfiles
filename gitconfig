@@ -1,0 +1,52 @@
+[core]
+excludesfile = /Users/mushin/.gitignore_global
+editor = vim
+autocrlf = input
+pager = less -FRSX
+
+[diff]
+tool = vimdiff
+algorithm = patience
+[alias]
+hist = log --graph --decorate --oneline --all
+co = checkout
+dc = diff --cached
+s = status
+c = commit
+d = diff
+dfs = diff --staged
+b = branch
+df = diff
+a = add
+mlog = log --oneline --reverse --since="5am" --author="Tarek"
+
+[user]
+name = Tarek Hafez
+email = thafez@ymail.com
+username = bobfromaccounting
+
+[color]
+ui = true
+
+[merge]
+tool = vimdiff
+ff = false
+
+[commit]
+template = /Users/mushin/.bash_commit_template
+
+[hub]
+protocol = https
+
+[pull]
+rebase = true
+
+[apply]
+whitespace = nowarn
+
+[push]
+default = simple
+
+[filter "media"]
+clean = git-media-clean %f
+smudge = git-media-smudge %f
